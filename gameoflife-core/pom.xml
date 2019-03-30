@@ -59,8 +59,8 @@
                      <reports>
                         <report>checkstyle</report>
                      </reports>
-                   <reportSet>
-                 <reportSets>
+                   </reportSet>
+                 </reportSets>
                 <!--<configuration>				
                   <configLocation>
 		    src/main/config/company-checks.xml
