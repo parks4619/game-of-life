@@ -57,7 +57,7 @@
                 <configuration>				
                   <configLocation>
 		    src/main/config/company-checks.xml
-		  </configuration>
+		  </configLocation>
                 </configuration>				
 
             </plugin>
