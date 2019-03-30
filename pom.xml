@@ -223,9 +223,9 @@
             <build>
                 <plugins>
                     <!-- CHECKSTYLE -->
-                    <!--<plugin>-->
-                        <!--<artifactId>maven-checkstyle-plugin</artifactId>-->
-                        <!--<version>2.9.1</version>-->
+                   <!-- <plugin>
+                        <artifactId>maven-checkstyle-plugin</artifactId>
+                        <version>2.9.1</version>y-->
                         <!--<dependencies>-->
                             <!--<dependency>-->
                                 <!--<groupId>com.wakaleo.gameoflife</groupId>-->
@@ -236,7 +236,7 @@
                         <!--<configuration>-->
                             <!--<configLocation>custom-checkstyle.xml</configLocation>-->
                         <!--</configuration>-->
-                    <!--</plugin>-->
+                    </plugin>
 
                     <!-- PMD -->
                     <plugin>
