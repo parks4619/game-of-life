@@ -236,7 +236,7 @@
                         <!--<configuration>-->
                             <!--<configLocation>custom-checkstyle.xml</configLocation>-->
                         <!--</configuration>-->
-                    </plugin>
+                   <!-- </plugin> -->
 
                     <!-- PMD -->
                     <plugin>
