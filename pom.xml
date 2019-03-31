@@ -158,7 +158,7 @@
                  <artifactId>clover-maven-plugin</artifactId>
                   <configuration>
                     <generateHtml>true</generateHtml>
-                    <generateXml>true</generateHtml>
+                    <generateXml>true</generateXml>
                   </configuration>        
                 </plugin>
                 <plugin>
