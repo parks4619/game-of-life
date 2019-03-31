@@ -231,7 +231,7 @@
           <modules>  
              <module> <!-- List any other ear child modules here --></module>
          </modules>
-        <profile>
+        </profile>
         
         <profile>
             <id>development</id>
