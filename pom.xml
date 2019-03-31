@@ -29,12 +29,10 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>com.atlassian.maven.plugins</groupId>
-                <artifactId>maven-clover2-plugin</artifactId>
-                <version>3.0.4</version>
-
+                <groupId>org.openclover</groupId>
+                <artifactId>clover-maven-plugin</artifactId>
                 <configuration>
-                  <includesTestSourceRoots>false</includesTestSourceRoots>
+                  <generateHtml>true</generateHtml>
                   <generateXml>true</generateXml>
                 </configuration>
             </plugin>
@@ -114,7 +112,6 @@
                     <preparationGoals>clean install</preparationGoals>
                 </configuration>
             </plugin>
-
             <plugin>
                 <artifactId>maven-deploy-plugin</artifactId>
                 <version>2.8.2</version>
@@ -156,6 +153,14 @@
 
         <pluginManagement>
             <plugins>
+                <plugin>
+                 <groupId>org.openclover</groupId>
+                 <artifactId>clover-maven-plugin</artifactId>
+                  <configuration>
+                    <generateHtml>true</generateHtml>
+                    <generateXml>true</generateHtml>
+                  </configuration>        
+                </plugin>
                 <plugin>
                     <groupId>org.easyb</groupId>
                     <artifactId>maven-easyb-plugin</artifactId>
@@ -221,6 +226,13 @@
         <module>gameoflife-web</module>
     </modules>
     <profiles>
+        <profile>
+         <id>not-running-clover</id>
+          <modules>  
+             <module> <!-- List any other ear child modules here -->
+         </modules>
+        <profile>
+        
         <profile>
             <id>development</id>
             <activation>
